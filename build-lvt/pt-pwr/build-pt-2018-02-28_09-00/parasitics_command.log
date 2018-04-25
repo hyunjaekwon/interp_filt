@@ -1,0 +1,48 @@
+Warning: The "-increment" option is obsolete and will be removed in the upcoming release.Please update your scripts or they will fail! (PARA-113)
+Information: Derived library resistance unit is 999.999939 Kohm (Time unit is 1 ns, and Capacitance unit is 0.001000 pF). (DES-028)
+
+****************************************
+Report : read_parasitics /home/cc/cs199/fa13/class/cs199-cwb/ee241b/interp_filt_analysis/build-rvt/icc-par/current-icc/results/interp_filt.output.sbpf.max
+Design : interp_filt
+Version: G-2012.06
+Date   : Wed Feb 28 09:00:46 2018
+****************************************
+
+        0 error(s)
+        Format is SBPF
+        Annotated nets                   :           24
+        Annotated capacitances           :          469
+        Annotated resistances            :          445
+        Reduced coupling capacitances    :          135
+        Annotated PI models              :            0
+        Annotated Elmore delays          :            0
+
+1
+****************************************
+Report : annotated_parasitics
+	-check
+	-internal_nets
+	-boundary_nets
+Design : interp_filt
+Version: G-2012.06
+Date   : Wed Feb 28 09:00:46 2018
+****************************************
+
+                    |         |         |         |   RC    |   Not   |
+Net Type            |  Total  | Lumped  |  RC pi  | network |Annotated|
+--------------------+---------+---------+---------+---------+---------+
+Internal nets       |         |         |         |         |         |
+  - Pin to pin nets |       4 |       0 |       0 |       4 |       0 |
+  - Driverless nets |       0 |       0 |       0 |       0 |       0 |
+  - Loadless nets   |       0 |       0 |       0 |       0 |       0 |
+--------------------+---------+---------+---------+---------+---------+
+Boundary/port nets  |         |         |         |         |         |
+  - Pin to pin nets |      20 |       0 |       0 |      20 |       0 |
+  - Driverless nets |       0 |       0 |       0 |       0 |       0 |
+  - Loadless nets   |       1 |       0 |       0 |       0 |       1 |
+--------------------+---------+---------+---------+---------+---------+
+                    |      25 |       0 |       0 |      24 |       1 |
+
+1
+1
+1
