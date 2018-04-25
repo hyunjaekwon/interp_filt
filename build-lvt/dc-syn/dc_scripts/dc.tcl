@@ -77,8 +77,8 @@ set_fix_multiple_port_nets -all -buffer_constants
 # Compile the Design
 #################################################################################
 
-#compile_ultra -gate_clock -no_autoungroup
-compile_ultra -gate_clock
+compile_ultra -gate_clock -no_autoungroup
+#compile_ultra -gate_clock
 check_design
 
 #################################################################################
