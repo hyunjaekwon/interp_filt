@@ -1,7 +1,0 @@
-; Has unresolved modules?
-0
-; For Spice: case l by default
-; Lists of modules: Verilog Spice Verilog-A Adfmi
-; Verilog Top Module(s)
-1 interp_filt_tb
-;done

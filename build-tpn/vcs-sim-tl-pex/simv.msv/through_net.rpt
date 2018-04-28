@@ -1,8 +1,0 @@
-// List of a2a and d2d through-nets in the design. The a2a nets were optimized as analog
-// nets and will show as "Z" in the digital output file. The d2d nets were optimized as
-// digital nets and will show as "Z" in the analog output file. 
-// Use "print_thru_net a2a|d2d|all" mixed-signal setup command to 
-// enable their display in the digital and analog output files respectively.
-
-	interp_filt_tb.DUT0.vss A2A
-	interp_filt_tb.DUT0.vdd A2A

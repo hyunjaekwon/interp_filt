@@ -1,9 +1,0 @@
-*
-* CustomSim RHEL64 G-2012.06-SP2  (built 19:06:15 Nov 15 2012)
-* Build id: 2496988
-* Copyright (C) 2012 Synopsys Inc. All rights reserved.
-*
-
-interp_filt_tb.dut0.pavg = -3.0669253e-12  	from =  0.0000000e+00  	to   =  3.2000000e-09  
-temper           =  2.5000000e+01  
-alter#           =  1.0000000e+00  

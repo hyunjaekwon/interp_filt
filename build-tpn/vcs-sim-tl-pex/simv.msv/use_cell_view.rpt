@@ -1,9 +1,0 @@
-#===============================================================================
-# Command used on line 2 of mixed-signal control file vcsAD.init followed by
-# instances partitioned by that command
-#===============================================================================
-use_spice -cell interp_filt;
-
-#interp_filt_tb.DUT0
-
-
