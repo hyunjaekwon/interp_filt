@@ -129,6 +129,9 @@ pt-pwr: vcs-sim-gl-par vcs-sim-gl-par-convert
 pt-pwr-clean:
 	cd pt-pwr; make clean
 
+.PHONY: rept
+rept: pt-pwr-clean pt-pwr
+
 tools += pt-pwr
 
 #--------------------------------------------------------------------

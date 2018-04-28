@@ -28,6 +28,7 @@ always @ (posedge clk or posedge rst) begin
     else begin
         in_flopped                     <= in;
         tap_coeffs_flopped[NUM_TAPS-1] <= tap_coeffs[NUM_TAPS-1];
+        part_flopped[NUM_TAPS-1]       <= mult_out[NUM_TAPS-1];
         for (integer i=0; i<NUM_TAPS-1; i+=1) begin
             tap_coeffs_flopped[i] <= tap_coeffs[i];
             part_flopped[i]       <= add_sat_out[i];

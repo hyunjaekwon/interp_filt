@@ -1,0 +1,441 @@
+------------------------------------------------------------
+CustomSim RHEL64 G-2012.06-SP2 (built 20:38:01 Nov 27 2012)
+------------------------------------------------------------
+
+Build id: 2496988
+
+Command Line: xa -c xa_options -o xa -hspice simv.daidir/xa_cosim_top.spi -c
+simv.daidir/xaAmsCFG -c simv.daidir/xaAmsCFGRun -intr
+
+Start time: Wed Feb 28 22:37:30 2018
+
+=> INITIAL SUMMARY: Time taken = 0 sec
+
+Virtual memory: 244M, Peak Virtual Memory: 244M, Physical Memory: 57M.
+
+Environment variables set:
+-------------------------------------------------------------------------------
+| name                 | value                                                |
+|----------------------+------------------------------------------------------|
+| XA_GCC               | /usr/bin/gcc -m64                                    |
+| PWD                  | /home/cc/cs199/fa13/class/cs199-cwb/ee241b/interp_filt_a |
+|                      | nalysis/build-rvt/vcs-sim-tl-pex                     |
+| TCL_LIBRARY          | /home/ff/ee241/tools/xa/G-2012.06-SP2/auxx/ns/machin |
+|                      | d/lib/tcl                                            |
+| PVA_HDL              | 1                                                    |
+| SNPS_PLATFORM        | amd64                                                |
+| XA_HOME              | /home/ff/ee241/tools/xa/G-2012.06-SP2                |
+| XA_ARCH              | amd64                                                |
+| HOME                 | /home/cc/cs199/fa13/class/cs199-cwb                  |
+| XA_VERSION_FILE      | /home/ff/ee241/tools/xa/G-2012.06-SP2/etc/xa/xa_vers |
+|                      | ion                                                  |
+| PVA_COSIM            | 1                                                    |
+| XA_TEST_AMS_VPI      | 1                                                    |
+| SNPSLMD_LICENSE_FILE | 27005@license-srv.eecs.berkeley.edu:/share/instsww/s |
+|                      | ynopsys/G-2012.09/flexlm//license.dat                |
+| LM_LICENSE_FILE      | 5280@bisc.EECS.Berkeley.EDU                          |
+|-----------------------------------------------------------------------------|
+
+System information:
+------------------------------------------------------------------------------
+|                  | User id        | cs199-cwb                              |
+|                  | Host name      | hpse-9.EECS.Berkeley.EDU               |
+|                  | pid            | 28851                                  |
+| ---------------- |                |                                        |
+| Operating System | name           | Linux                                  |
+|                  | version        | 2.6.32-696.16.1.el6.centos.plus.x86_64 |
+| ---------------- |                |                                        |
+| Hardware data    | name           | x86_64                                 |
+|                  | processor type | x86_64                                 |
+|                  | platform name  | x86_64                                 |
+|                  | model name     | Intel(R) Xeon(R) CPU L5420 @ 2.50GHz   |
+|                  | number of cpu  | 8                                      |
+|                  | cpu MHz        | 2003.000                               |
+|                  | cache size     | 6144 KB                                |
+|----------------------------------------------------------------------------|
+
+License initial existence checking succeeded
+
+=> FE/LICENSE EXISTENCE CHECK SUMMARY: Time taken = 0 sec, Wall time = 1 sec
+
+Virtual memory: 265M, Peak Virtual Memory: 265M, Physical Memory: 58M.
+
+Warning: /usr/bin/gcc has version 4.4.7, however 4.5.2 is recommended for
+this platform. Please reset environment variable XA_GCC to the proper path.
+
+Initialization file "xa.ini" was not found.
+
+Model library usage
+-----------------------------------------------------------------------------------------
+| Library Name                                     | Library Entry Name   | Line Number |
+|--------------------------------------------------+----------------------+-------------|
+| ./saed32nm.lib                                   | model_n18            | 1435        |
+| ./saed32nm.lib                                   | model_p18            | 1568        |
+| /home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib | TT                   | 1344        |
+| saed32nm.lib                                     | TT_n18               | 68          |
+| saed32nm.lib                                     | TT_p18               | 94          |
+| saed32nm.lib                                     | TT_n105_hvt          | 120         |
+| saed32nm.lib                                     | TT_p105_hvt          | 146         |
+| saed32nm.lib                                     | TT_n105_lvt          | 173         |
+| saed32nm.lib                                     | TT_p105_lvt          | 199         |
+| saed32nm.lib                                     | TT_n105              | 226         |
+| saed32nm.lib                                     | TT_p105              | 252         |
+| saed32nm.lib                                     | TT_N25               | 277         |
+| saed32nm.lib                                     | TT_P25               | 301         |
+| saed32nm.lib                                     | nov_sub              | 1415        |
+| saed32nm.lib                                     | noacvsubckt          | 1421        |
+| saed32nm.lib                                     | n105_hvt_model       | 1697        |
+| saed32nm.lib                                     | p105_hvt_model       | 1835        |
+| saed32nm.lib                                     | n105_lvt_model       | 1961        |
+| saed32nm.lib                                     | p105_lvt_model       | 2099        |
+| saed32nm.lib                                     | n105_model           | 2224        |
+| saed32nm.lib                                     | p105_model           | 2362        |
+| saed32nm.lib                                     | n18_noacvsubckt      | 2541        |
+| saed32nm.lib                                     | p18_noacvsubckt      | 2618        |
+| saed32nm.lib                                     | n105_hvt_noacvsubckt | 2692        |
+| saed32nm.lib                                     | p105_hvt_noacvsubckt | 2764        |
+| saed32nm.lib                                     | n105_lvt_noacvsubckt | 2840        |
+| saed32nm.lib                                     | p105_lvt_noacvsubckt | 2912        |
+| saed32nm.lib                                     | n105_noacvsubckt     | 2987        |
+| saed32nm.lib                                     | p105_noacvsubckt     | 3059        |
+| saed32nm.lib                                     | N25_nov_sub          | 3135        |
+| saed32nm.lib                                     | P25_nov_sub          | 3195        |
+| saed32nm.lib                                     | defaults             | 3257        |
+| saed32nm.lib                                     | shared_nomc          | 3475        |
+| saed32nm.lib                                     | skew_noskew          | 3488        |
+| saed32nm.lib                                     | montecarlo_nomc      | 3633        |
+| saed32nm.lib                                     | N25                  | 3776        |
+| saed32nm.lib                                     | P25                  | 3849        |
+| saed32nm.lib                                     | MOS                  | 4260        |
+|---------------------------------------------------------------------------------------|
+
+Total number of statements parsed: 4464
+
+=> FE/PARSER SUMMARY: Time taken = 0 sec
+
+Virtual memory: 270M, Peak Virtual Memory: 270M, Physical Memory: 63M.
+
+Warning: set_waveform will be obsolete command, please use
+set_waveform_option instead
+
+Commands
+------------------------------------------------------------------------
+| command                                     | scope | location       |
+|---------------------------------------------+-------+----------------|
+| set_waveform -format vpd -file merge        |       | (xa_options:1) |
+| probe_waveform_voltage interp_filt_tb.dut0.a*   |       | (xa_options:2) |
+| probe_waveform_voltage interp_filt_tb.dut0.z*   |       | (xa_options:3) |
+| probe_waveform_current interp_filt_tb.dut0.Vvdd |       | (xa_options:4) |
+|----------------------------------------------------------------------|
+
+Options
+----------------------------------------
+| name | type | value | location       |
+|------+------+-------+----------------|
+| POST | enum | VPD   | (xa_options:1) |
+|--------------------------------------|
+
+Summary of data compression for both waveform and diagnostic features
+-------------------------------------------------------------------------------
+| Data compression type           | Setting | Command to adjust it            |
+|---------------------------------+---------+---------------------------------|
+| time roundoff resolution        | 1e-13   | set_waveform_option -tres       |
+| slope-based voltage compression | 1e-06   | set_waveform_option -compress_v |
+| slope-based current compression | 1e-12   | set_waveform_option -compress_i |
+|-----------------------------------------------------------------------------|
+
+Summary of data compression for waveform only
+-----------------------------------------------------------------------
+| Data compression type       | Setting | Command to adjust it        |
+|-----------------------------+---------+-----------------------------|
+| voltage roundoff resolution | 1e-06   | set_waveform_option -grid_v |
+| current roundoff resolution | 1e-12   | set_waveform_option -grid_i |
+|---------------------------------------------------------------------|
+
+Source Files:
+------------------------------------------------------------
+| name                                             | type  |
+|--------------------------------------------------+-------|
+| /home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib | ideal |
+| interp_filt.sp                                       | ideal |
+| xa_options                                       | ideal |
+|----------------------------------------------------------|
+
+Nodes statistics:
+-----------------
+| type  | count |
+|-------+-------|
+| TOTAL | 2648  |
+|---------------|
+
+Element statistics:
+----------------------------------------------
+| type      | format | count | unique models |
+|-----------+--------+-------+---------------|
+| NMOS      | HSPICE | 84    | 5             |
+| PMOS      | HSPICE | 84    | 4             |
+| V         | HSPICE | 2     | 2             |
+| SIMPLE Cg |        | 1333  |               |
+| SIMPLE R  |        | 2739  |               |
+| TOTAL     |        | 4242  | 11            |
+|--------------------------------------------|
+
+License check: effective XA_SHARED_LICENSE_ORDER =
+hsim-sc:hsim-ms:xsim:fastspice_xa+nanosim:fastspice_xa+hsim-xl
+
+License checking succeeded
+
+=> FE/LICENSE CHECK SUMMARY: Time taken = 0 sec, Wall time = 0 sec
+
+Virtual memory: 274M, Peak Virtual Memory: 274M, Physical Memory: 69M.
+
+Summary of License Checking
+---------------------------------------------------------
+| Effective elem. count | 168                           |
+| Flexlm version        | 10.8                          |
+| Key                   | hsim-cosim                    |
+| Copies                | 1                             |
+| Version               | 2012.06                       |
+| Expiration date       | 25-sep-2018/2017.03           |
+| Server                | license-srv.eecs.berkeley.edu |
+|                       | ---------------               |
+| Key                   | xsim                          |
+| Copies                | 1                             |
+| Version               | 2012.06                       |
+| Expiration date       | 25-sep-2018/2017.03           |
+| Server                | license-srv.eecs.berkeley.edu |
+|-------------------------------------------------------|
+
+Summary of output options and statements that contain wildcard:
+-----------------------------------------------------------------------
+| Location       | Pattern/Option                 | Number of matches |
+|----------------+--------------------------------+-------------------|
+| (xa_options:2) | v(interp_filt_tb.dut0.a*) -limit 3 | 4                 |
+|---------------------------------------------------------------------|
+
+Warning: "Output analysis statement skipped" occurs 1 times.
+
+Following statements are skipped:
+----------------------------------------------------------------------
+|                | statement | reason                                |
+|----------------+-----------+---------------------------------------|
+| (xa_options:3) | (probe)   | no match to node 'interp_filt_tb.dut0.z*' |
+|--------------------------------------------------------------------|
+
+CAP HISTOGRAM
+------------------------------------------------------------
+| cap range        | number of caps | percentage | comment |
+|------------------+----------------+------------+---------|
+| > 1e-10          | 0              | 0.000000   |         |
+| (1e-11, 1e-10]   | 0              | 0.000000   |         |
+| (5e-12, 1e-11]   | 0              | 0.000000   |         |
+| (1e-12, 5e-12]   | 0              | 0.000000   |         |
+| (5e-13, 1e-12]   | 0              | 0.000000   |         |
+| (1e-13, 5e-13]   | 0              | 0.000000   |         |
+| (7.5e-14, 1e-13] | 0              | 0.000000   |         |
+| (5e-14, 7.5e-14] | 0              | 0.000000   |         |
+| (2.5e-14, 5e-14] | 0              | 0.000000   |         |
+| (1e-14, 2.5e-14] | 0              | 0.000000   |         |
+| (7.5e-15, 1e-14] | 0              | 0.000000   |         |
+| (5e-15, 7.5e-15] | 0              | 0.000000   |         |
+| (2.5e-15, 5e-15] | 0              | 0.000000   |         |
+| (1e-15, 2.5e-15] | 0              | 0.000000   |         |
+| (7.5e-16, 1e-15] | 0              | 0.000000   |         |
+| (5e-16, 7.5e-16] | 0              | 0.000000   |         |
+| (2.5e-16, 5e-16] | 0              | 0.000000   |         |
+| (1e-16, 2.5e-16] | 0              | 0.000000   |         |
+| (7.5e-17, 1e-16] | 0              | 0.000000   |         |
+| (5e-17, 7.5e-17] | 0              | 0.000000   |         |
+| (2.5e-17, 5e-17] | 0              | 0.000000   |         |
+| (1e-17, 2.5e-17] | 0              | 0.000000   |         |
+| (5e-18, 1e-17]   | 0              | 0.000000   |         |
+| (1e-18, 5e-18]   | 0              | 0.000000   |         |
+| (5e-19, 1e-18]   | 0              | 0.000000   |         |
+| (1e-19, 5e-19]   | 0              | 0.000000   |         |
+| (0, 1e-19]       | 0              | 0.000000   |         |
+| CCAP total       | 0              | 100        |         |
+| Negative cap     | 0              |            |         |
+| open-circuit     | 0              |            |         |
+| GCAP in netlist  | 1354           |            |         |
+| total            | 1354           |            |         |
+|----------------------------------------------------------|
+
+POSITIVE RESISTOR HISTOGRAM.
+------------------------------------------------
+| res range       | number of res | percentage |
+|-----------------+---------------+------------|
+| > 1e+13         | 0             | 0.000000   |
+| (1e+12, 1e+13]  | 0             | 0.000000   |
+| (1e+11, 1e+12]  | 0             | 0.000000   |
+| (1e+10, 1e+11]  | 0             | 0.000000   |
+| (1e+09, 1e+10]  | 0             | 0.000000   |
+| (1e+08, 1e+09]  | 0             | 0.000000   |
+| (1e+07, 1e+08]  | 0             | 0.000000   |
+| (1e+06, 1e+07]  | 0             | 0.000000   |
+| (100000, 1e+06] | 0             | 0.000000   |
+| (10000, 100000] | 0             | 0.000000   |
+| (1000, 10000]   | 0             | 0.000000   |
+| (100, 1000]     | 700           | 25.556773  |
+| (10, 100]       | 205           | 7.484483   |
+| (1, 10]         | 140           | 5.111355   |
+| (0.1, 1]        | 885           | 32.311062  |
+| (0.01, 0.1]     | 745           | 27.199708  |
+| (0.001, 0.01]   | 0             | 0.000000   |
+| (0.0001, 0.001] | 64            | 2.336619   |
+| (1e-05, 0.0001] | 0             | 0.000000   |
+| (1e-06, 1e-05]  | 0             | 0.000000   |
+| (1e-07, 1e-06]  | 0             | 0.000000   |
+| <= 1e-07        | 0             | 0.000000   |
+| RES total       | 2739          | 100        |
+|----------------------------------------------|
+
+Warning: "Dangling terminal" occurs 430 times. The first 10 warnings are
+tabulated. To change the limit for every message type, use:
+"set_message_option -limit <limit>"
+
+The following elements have a terminal that is not connected to any other
+element
+---------------------------------------------------------------------------
+|                   | Element             | Node                          |
+|-------------------+---------------------+-------------------------------|
+| (interp_filt.sp:4078) | interp_filt_tb.dut0.r4  | interp_filt_tb.dut0.1:u40|ln_n_7  |
+| (interp_filt.sp:4077) | interp_filt_tb.dut0.r5  | interp_filt_tb.dut0.1:u40|ln_n_8  |
+| (interp_filt.sp:4076) | interp_filt_tb.dut0.r6  | interp_filt_tb.dut0.1:u40|ln_n_11 |
+| (interp_filt.sp:4075) | interp_filt_tb.dut0.r7  | interp_filt_tb.dut0.1:u40|ln_n_10 |
+| (interp_filt.sp:4056) | interp_filt_tb.dut0.r26 | interp_filt_tb.dut0.11:u40|y1     |
+| (interp_filt.sp:4051) | interp_filt_tb.dut0.r31 | interp_filt_tb.dut0.16:u40|y1     |
+| (interp_filt.sp:4047) | interp_filt_tb.dut0.r35 | interp_filt_tb.dut0.19:u40|y1     |
+| (interp_filt.sp:4043) | interp_filt_tb.dut0.r39 | interp_filt_tb.dut0.22:u40|y1     |
+| (interp_filt.sp:4038) | interp_filt_tb.dut0.r44 | interp_filt_tb.dut0.1:u40|ln_n_9  |
+| (interp_filt.sp:4034) | interp_filt_tb.dut0.r48 | interp_filt_tb.dut0.1:u39|ln_n_11 |
+|-------------------------------------------------------------------------|
+
+Warning: 1 0V voltage sources have been shorted.
+
+=> FE SUMMARY: Time taken = 0 sec
+
+Virtual memory: 274M, Peak Virtual Memory: 274M, Physical Memory: 72M.
+
+Entering DC method 1
+
+DC method 1 progress 10% done
+
+DC method 1 progress 20% done
+
+DC method 1 progress 30% done
+
+DC method 1 progress 40% done
+
+DC method 1 progress 50% done
+
+DC method 1 progress 60% done
+
+DC method 1 progress 70% done
+
+DC method 1 progress 80% done
+
+DC method 1 progress 90% done
+
+DC method 1 progress 100% done
+
+DC has successfully converged with method 1 ( 0 sec )
+
+=> DC SUMMARY: Time taken = 0 sec
+
+Virtual memory: 351M, Peak Virtual Memory: 351M, Physical Memory: 76M.
+
+Summary of Partition for Transient Analysis:
+-------------------------------------
+| number of | devices   | nodes     |
+| regions   | in region | in region |
+|-----------+-----------+-----------|
+| 1         | 1         | 2         |
+| 1         | 2         | 2         |
+| 7         | 4         | 6         |
+| 8         | 4         | 7         |
+| 1         | 4         | 8         |
+| 4         | 25        | 16        |
+| 1         | 25        | 17        |
+| 1         | 25        | 41        |
+| 1         | 27        | 44        |
+| 5         | 28        | 17        |
+| 6         | 28        | 18        |
+| 1         | 32        | 41        |
+| 1         | 33        | 44        |
+| 1         | 34        | 47        |
+| 1         | 36        | 45        |
+| 1         | 37        | 46        |
+| 1         | 40        | 48        |
+|-----------------------------------|
+
+Largest partition details
+---------------------------------------------------------------------------
+| Total number of elements                | 40                            |
+| Total MOS                               | 0                             |
+| Total non-MOS                           | 40                            |
+| Total number of nodes                   | 48                            |
+| Nodes with maximum connections          | : Optimized/Internal Node (4) |
+|                                         | : Optimized/Internal Node (4) |
+|                                         | : Optimized/Internal Node (4) |
+|                                         | : Optimized/Internal Node (4) |
+|                                         | : Optimized/Internal Node (3) |
+|                                         | : Optimized/Internal Node (3) |
+|                                         | : Optimized/Internal Node (3) |
+|                                         | : Optimized/Internal Node (3) |
+|                                         | : Optimized/Internal Node (3) |
+|                                         | : Optimized/Internal Node (3) |
+| Original nodes with maximum connections | : interp_filt_tb.dut0.a<1> (2)    |
+|-------------------------------------------------------------------------|
+
+Total Number of Regions: 42
+
+Summary of probed signals and waveforms:
+---------------------------------------
+| Total number of signals probed  | 5 |
+| Voltage probes                  | 4 |
+| Current probes                  | 1 |
+| Other probes                    | 0 |
+| Total waveforms written to file | 6 |
+| Logic waveforms                 | 0 |
+| Other waveforms                 | 6 |
+| Waveform aliases                | 0 |
+|-------------------------------------|
+
+=> TR/SETUP SUMMARY: Time taken = 1 sec
+
+Virtual memory: 353M, Peak Virtual Memory: 353M, Physical Memory: 77M.
+
+Synchronous Groups
+----------------------------------------------
+| Group Id | Synched Regions | Synched Nodes |
+|--------------------------------------------|
+
+Engine starting time = (Wed Feb 28 22:37:34 2018 )
+
+Simulation stopped at time = 1600.000000ns
+
+Engine ending time = (Wed Feb 28 22:37:34 2018 )
+
+=> TR/ENGINE SUMMARY: Time taken = 0 sec, Wall time = 0 sec
+
+Virtual memory: 358M, Peak Virtual Memory: 358M, Physical Memory: 78M.
+
+
+
+=> TR/ANALYSIS SUMMARY: Time taken = 0 sec, Wall time = 0 sec
+
+Virtual memory: 358M, Peak Virtual Memory: 358M, Physical Memory: 78M.
+
+=> TR SUMMARY: Time taken = 1 sec
+
+Virtual memory: 358M, Peak Virtual Memory: 358M, Physical Memory: 78M.
+
+Peak Virtual Memory = 358 M
+
+Grand Total Time = 2 sec
+
+Total Wall Time = 4 sec
+
+Total number of comparison errors = 0
+
+XA done (Wed Feb 28 22:37:34 2018 ).
