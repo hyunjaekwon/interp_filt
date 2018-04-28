@@ -1,0 +1,56 @@
+
+Start netlist compilation at Wed Feb 28 22:37:27 2018
+
+Compiling "simv.daidir/amsSnpsMacroDef.spi" (SPICE)
+Compiling "interp_filt.sp" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+Compiling "/home/ff/ee241/synopsys-32nm/hspice/saed32nm.lib" (SPICE)
+
+
+
+Parsing netlist finished in 0 seconds
+Default circuit temperature                       :       25.000
+Total # of elements                               :            0
+Total # of nodes                                  :            0
+Total # of subckt                                 :           12
+Total # of top-level instances                    :            0
+Building instance tree finished in 0 seconds
+
+Finish netlist compilation at Wed Feb 28 22:37:27 2018
+

@@ -1,0 +1,33 @@
+# interface net information
+# a2d:   Analog to Digital interface node
+# d2a:   Digital to Analog interface node
+# inout: bidirectional interface node
+# e2r:    Real interface node with an Analog to Digital direction
+# r2e:    Real interface node with a Digital to Analog direction
+
+Total number of resistors added by interface elements = 21
+Total number of capacitors added by interface elements = 21
+
+rmap_file 1 = /home/ff/ee241/tools/xa/G-2012.06-SP2/include/rmapAD.init
+
+d2a hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.DUT0.a<0>;
+d2a hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.DUT0.a<1>;
+d2a hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.DUT0.a<2>;
+d2a hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.DUT0.a<3>;
+d2a hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.DUT0.clk;
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[0];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[1];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[2];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[3];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[4];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[5];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[6];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[7];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[8];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[9];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[10];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[11];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[12];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[13];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[14];
+inout loth=0.3v hith=0.7v hiv=1.05v lov=0v rf_time=1e-11 rise_time=2e-11 fall_time=2e-11 node=interp_filt_tb.Z[15];
