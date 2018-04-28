@@ -8,7 +8,7 @@ module mult #(
 );
 
 logic signed [TAP_COEFF_WIDTH + DATA_WIDTH - 2 : 0] mult_out; // -1 because signed multiplication
-assign mult_out = $signed(in) * $signed(tap_coeff);
-assign out = mult_out[TAP_COEFF_WIDTH + DATA_WIDTH - 2 : TAP_COEFF_WIDTH - 1];
+assign mult_out = ($signed(in) * $signed(tap_coeff));
+assign out = $signed(mult_out[TAP_COEFF_WIDTH + DATA_WIDTH - 2 : TAP_COEFF_WIDTH - 1]);
 
 endmodule

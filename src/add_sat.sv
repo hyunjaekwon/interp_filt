@@ -19,9 +19,9 @@ always @(*) begin
 end // always @(*)
 
 always @(*) begin
-	if      (sum >= $signed(  'b1 << (DATA_WIDTH-1)))  sum_sat = ~('b1 << (DATA_WIDTH-1));
-	else if (sum <  $signed(-('b1 << (DATA_WIDTH-1)))) sum_sat =   'b1 << (DATA_WIDTH-1) ;
-	else                                               sum_sat = sum[DATA_WIDTH-1:0];
+	if      (sum >= $signed(  'b1 << (DATA_WIDTH-1)))  sum_sat = $signed(~('b1 << (DATA_WIDTH-1)));
+	else if (sum <  $signed(-('b1 << (DATA_WIDTH-1)))) sum_sat = $signed(  'b1 << (DATA_WIDTH-1) );
+	else                                               sum_sat = $signed(sum[DATA_WIDTH-1:0]);
 end // always @(*)
 
 assign out = sum_sat;

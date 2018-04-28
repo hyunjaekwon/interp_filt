@@ -1,0 +1,26 @@
+****************************************
+Report : clock_skew
+Design : interp_filt
+Version: G-2012.06
+Date   : Wed Feb 28 09:00:47 2018
+****************************************
+
+
+****************************************
+Report : clock
+Design : interp_filt
+Version: G-2012.06
+Date   : Wed Feb 28 09:00:47 2018
+****************************************
+
+
+Attributes:
+    p - Propagated clock
+    G - Generated  clock
+    I - Inactive   clock
+
+Clock          Period   Waveform            Attrs     Sources
+-------------------------------------------------------------------------------
+ideal_clock1   0.1800   {0 0.09}                      {clk}
+
+1
