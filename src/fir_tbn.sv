@@ -1,4 +1,4 @@
-module fir_direct_pipe #(
+module fir_tbn #(
     parameter DATA_WIDTH      = 5,
     parameter TAP_COEFF_WIDTH = 5,
     parameter NUM_TAPS        = 50
@@ -7,41 +7,37 @@ module fir_direct_pipe #(
     input                               rst,
     input  signed [DATA_WIDTH-1:0]      in,
     output signed [DATA_WIDTH-1:0]      out,
-    input  signed [TAP_COEFF_WIDTH-1:0] tap_coeffs [NUM_TAPS-1:0]//,
-    // output signed [DATA_WIDTH-1:0] mult_out   [NUM_TAPS-1:0]
+    input  signed [TAP_COEFF_WIDTH-1:0] tap_coeffs [NUM_TAPS-1:0]
 );
 
-logic signed [DATA_WIDTH-1:0] in_flopped       [NUM_TAPS-1:0];
-logic signed [DATA_WIDTH-1:0] mult_out         [NUM_TAPS-1:0];
-logic signed [DATA_WIDTH-1:0] mult_out_flopped [NUM_TAPS-1:0];
-logic signed [DATA_WIDTH-1:0] out_pre_flopped, out_flopped;
+logic signed [DATA_WIDTH-1:0] in_flopped   [NUM_TAPS-1:0];
+logic signed [DATA_WIDTH-1:0] part_flopped [NUM_TAPS-1:0]; // [0] should be connected to out
+logic signed [DATA_WIDTH-1:0] mult_out     [NUM_TAPS-1:0];
+logic signed [DATA_WIDTH-1:0] add_sat_out  [NUM_TAPS-2:0];
 
 logic signed [TAP_COEFF_WIDTH-1:0] tap_coeffs_flopped [NUM_TAPS-1:0];
-// logic rst_flopped;
 
 always @ (posedge clk or posedge rst) begin
     if (rst) begin
-        out_flopped <= '0;
         for (integer i=0; i<NUM_TAPS; i+=1) begin
             tap_coeffs_flopped[i] <= '0;
+            part_flopped[i]       <= '0;
             in_flopped[i]         <= '0;
-            mult_out_flopped[i]   <= '0;
         end // for (integer i=0; i<NUM_TAPS; i+=1)
     end // if (rst)
     else begin
-        in_flopped[0]         <= in;
-        out_flopped           <= out_pre_flopped;
-        tap_coeffs_flopped[0] <= tap_coeffs[0];
-        mult_out_flopped[0]   <= mult_out[0];
-        for (integer i=1; i<NUM_TAPS; i+=1) begin
+        in_flopped[NUM_TAPS-1]         <= in;
+        tap_coeffs_flopped[NUM_TAPS-1] <= tap_coeffs[NUM_TAPS-1];
+        part_flopped[NUM_TAPS-1]       <= mult_out[NUM_TAPS-1];
+        for (integer i=0; i<NUM_TAPS-1; i+=1) begin
             tap_coeffs_flopped[i] <= tap_coeffs[i];
-            mult_out_flopped[i]   <= mult_out[i];
-            in_flopped[i]         <= in_flopped[i-1];
+            part_flopped[i]       <= add_sat_out[i];
+            in_flopped[i]         <= in;
         end // for (integer i=1; i<NUM_TAPS; i+=1)
     end // else
 end // always @ (posedge clk or posedge rst)
 
-assign out = out_flopped;
+assign out = part_flopped[0];
 
 genvar i;
 for (i=0; i<NUM_TAPS; i=i+1) begin: mult
@@ -55,15 +51,17 @@ for (i=0; i<NUM_TAPS; i=i+1) begin: mult
     );
 end // mult
 
-add_sat_tree #(
-    .DATA_WIDTH(DATA_WIDTH),
-    .NUM_TAPS(NUM_TAPS),
-    .USE_PIPE(1)
-) add_sat_tree (
-    .clk,
-    .rst,
-    .in(mult_out_flopped),
-    .out(out_pre_flopped)
-);
+for (i=0; i<NUM_TAPS-1; i=i+1) begin: add_sat
+    logic signed [DATA_WIDTH-1:0] adder_in [1:0];
+    assign adder_in[1] = mult_out[i];
+    assign adder_in[0] = part_flopped[i+1];
+    add_sat #(
+        .DATA_WIDTH(DATA_WIDTH),
+        .NUM_TAPS(2)
+    ) add_sat (
+        .in(adder_in),
+        .out(add_sat_out[i])
+    );
+end // mult
 
 endmodule

@@ -33,6 +33,6 @@ mw_ref_libs = \
 target_library_files = \
   saed32lvt_$(tt_corner_stdcells).db \
 
-toplevel     = fir_transpose_nom
-testharness  = fir_transpose_nom_tb
-toplevelinst = fir_transpose_nom
+toplevel     = fir_tbn
+testharness  = fir_tbn_tb
+toplevelinst = fir_tbn
