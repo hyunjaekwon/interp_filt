@@ -1,4 +1,0 @@
-set_waveform -format vpd -file merge
-probe_waveform_voltage interp_filt_tb.dut0.a*
-probe_waveform_voltage interp_filt_tb.dut0.z*
-probe_waveform_current interp_filt_tb.dut0.Vvdd
